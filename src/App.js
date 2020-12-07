@@ -1,21 +1,17 @@
 import React, {Component} from 'react';
-import Baseusers from "./Database/Database";
-import {users} from "./AllUsers/AllUsers"
-
+import {autoria} from "./components/AllCars/AllCars";
+import BrandCars from "./components/BrandCars/BrandCars";
 
 class App extends Component {
-
-  render() {
-
-    return (
-        <div>
-          {
-            users.map((user, index) => (<Baseusers item={user} key={index}/>))
-          }
-        </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                {
+                    autoria.map((car, index) =>(<BrandCars item={car} key={index}/>))
+                }
+            </div>
+        );
+    }
 }
 
 export default App;
-
