@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import Allposts from "./components/AllPosts/AllPosts";
-
+import PostsAll  from "./components/PostsAll/PostsAll";
 class App extends Component {
     render() {
         return (
             <div>
-                <Allposts/>
+                <PostsAll/>
             </div>
         );
     }
