@@ -25,6 +25,9 @@ class PostsAll extends Component {
                 {
                     users.map(value => <Post item ={value} key={value.id} choseid={this.choseid} isShowButton={true}/>)
                 }
+         {
+             "-----------------------------------------"
+         }
                 {
                     choseone && <Post item={choseone} isShowButton={false}/>
                 }
